@@ -1,7 +1,0 @@
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\RyewoodResidents.exe
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\appsettings.Development.json
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\appsettings.json
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\RyewoodResidents.dll
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\RyewoodResidents.deps.json
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\RyewoodResidents.runtimeconfig.json
-D:\dev\RyewoodResidents\bin\Debug\net6.0\publish\RyewoodResidents.pdb
