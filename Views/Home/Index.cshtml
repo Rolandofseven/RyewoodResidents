@@ -2,103 +2,97 @@
     ViewData["Title"] = "Home Page";
 }
 
-<script>
-  function hideAllNews () {
 
-    $('#story1').hide();
-    $('#story2').hide();
-  }
-</script>
 
 <!-- Carousel wrapper -->
-<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-mdb-target="#carouselBasicExample"
-      data-mdb-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselBasicExample"
-      data-mdb-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-mdb-target="#carouselBasicExample"
-      data-mdb-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
+<div  style="max-width: 1250px; margin: auto;" style="padding-top:0px">
+  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="~/images/house-at-night.jpg"  height="500" class="d-block w-100" alt="Sunset Over the City"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="~/images/yellow-field-2.jpg"   height="500"  class="d-block w-100" alt="Canyon at Nigh"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="~/images/Swan in mist by Fran French.webp"  height="500" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-
-  <!-- Inner -->
-  <div class="carousel-inner">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <img src="~/images/house-at-night.jpg" width="1320" height="500" class="d-block w-100" alt="Sunset Over the City"/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <img src="~/images/yellow-field.jpg" width="1320" height="500" class="d-block w-100" alt="Canyon at Nigh"/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <img src="~/images/Swan in mist by Fran French.webp" width="1320" height="500" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Inner -->
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 <!-- Carousel wrapper -->
 
 <!-- Main welcome text -->
-<div class="mainWelcomText">Ryewood Residents Portal</div>
+<div class="mainWelcomText">Ryewood Residents Association is a co-educational day and boarding school for 11 to 18-year-olds</div>
 <!-- End of welcome text -->
 
-  <div class="row">
-    <div class="col-11">
-      <div class="introText" id="story1">
-      Story1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Dapibus ultrices in iaculis nunc sed augue lacus. Consectetur adipiscing elit ut aliquam. Ornare aenean euismod elementum nisi. Risus nullam eget felis eget nunc lobortis. Neque ornare aenean euismod elementum nisi quis eleifend. Vestibulum morbi blandit cursus risus at. Bibendum est ultricies integer quis.
-      </div>
-      <div class="introText" id="story2">
-      Story 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Dapibus ultrices in iaculis nunc sed augue lacus. Consectetur adipiscing elit ut aliquam. Ornare aenean euismod elementum nisi. Risus nullam eget felis eget nunc lobortis. Neque ornare aenean euismod elementum nisi quis eleifend. Vestibulum morbi blandit cursus risus at. Bibendum est ultricies integer quis.
-      </div>
-    </div>
+<div class="card">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">GET IN TOUCH YOUR CONTRIBUTION IS IMPORTANT TO US</h6>
+          
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa vitae tortor condimentum lacinia quis vel eros donec. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Massa enim nec dui nunc mattis enim ut tellus. Amet risus nullam eget felis eget. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. A diam maecenas sed enim ut sem viverra aliquet. Id donec ultrices tincidunt arcu non sodales neque. Pretium lectus quam id leo. Ut pharetra sit amet aliquam id diam maecenas ultricies mi.
+          </div> <br/>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa vitae tortor condimentum lacinia quis vel eros donec. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Massa enim nec dui nunc mattis enim ut tellus. Amet risus nullam eget felis eget. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. A diam maecenas sed enim ut sem viverra aliquet. Id donec ultrices tincidunt arcu non sodales neque. Pretium lectus quam id leo. Ut pharetra sit amet aliquam id diam maecenas ultricies mi.
+          </div>
 
-     <div class="col-1">
-      <a href="#" onClick="hideAllNews();$('#story1').show();">14th May 2016</a><br/>
-      <a href="#" onClick="hideAllNews();$('#story2').show();">4th May 2016</a><br/>
-      14th May 2016<br/>
-      14th May 2016<br/>
-    </div>
+        
+     
+        </div>
+      </div>
   </div>
 
 <!-- Mid text -->
@@ -199,8 +193,8 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: #617E4D;
-    font-size: 44px;
+    color: #1b3e93;
+    font-size: 34px;
   }
 
   .whatCanWeHelpYouWith {
@@ -232,12 +226,14 @@
 
 
   .introText {
-    padding-left: 150px;
-    padding-right: 150px;
     padding-bottom: 25px;
   }
 
+  .newsParagraph {
+      padding-top: 10px;
+      padding-bottom: 10px;
 
+  }
 
   
 </style>
