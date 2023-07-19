@@ -58,7 +58,7 @@ public class HomeController : Controller
         await client.ConnectAsync("smtp.sendgrid.net", 587, SecureSocketOptions.StartTls);
         await client.AuthenticateAsync(
             userName: "apikey", // the userName is the exact string "apikey" and not the API key itself.
-            password: "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" // password is the API key
+            password: "" // password is the API key
         );
 
         Console.WriteLine("Sending email");
