@@ -2,9 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
+<script>
+  $( document ).ready(function() {
+    //$('#exampleModalLong').modal('show');
+    //$('#textForModel').val("Bob bob blob o");
+    
+});
 
+function closeModel() {
+  $('#exampleModalLong').modal('hide');
+}
+</script>
 
 <!-- Carousel wrapper -->
+<div style="height: 10px;"></div>
 <div  style="max-width: 1250px; margin: auto;" style="padding-top:0px">
   <div id="carouselBasicExample" data-interval=5000 class="carousel slide carousel-fade" data-mdb-ride="carousel">
     <!-- Indicators -->
@@ -75,10 +86,10 @@
 <div class="mainWelcomText" >Message from the Board of Directors</div>
 <!-- End of welcome text -->
 
-<div>
+<div class="mainMesageText">
       <div>
         <!--<h6 class="card-subtitle mb-2 text-muted">GET IN TOUCH YOUR CONTRIBUTION IS IMPORTANT TO US</h6> -->
-        
+        <div>Sample text</div>        
         <div>
           We are a group of residents who have volunteered to join the Ryewood Residents Management Company Ltd as Directors to ensure that our beautiful Development is run and kept at its best.
           We are a group of residents who have volunteered to join the Ryewood Residents Management Company Ltd as Directors to ensure that our beautiful Development is run and kept at its best.
@@ -100,11 +111,11 @@
     <table cellpadding="0" cellspacing="0" border="1" class="table table-bordered newsTable">
       <tr>
         <td style="width: 80%;">Update from the Board of Directors</td>
-        <td><image src="/images/Calandar.png" style="padding-right: 15px;" /> January 10th 2023</td>
+        <td><image src="/images/Calandar.png" style="padding-right: 15px;" /> June 27th 2023</td>
       </tr>
       <tr>
         <td style="width: 80%;">Update from the Board of Directors</td>
-        <td><image src="/images/Calandar.png" style="padding-right: 15px;" /> January 10th 2023</td>
+        <td><image src="/images/Calandar.png" style="padding-right: 15px;" /> May 22nd 2023</td>
       </tr>
     </table>
   </div>
@@ -239,7 +250,7 @@
                 </div>
                 
                 <div class="col-lg-offset-2 col-lg-10">
-                  <button type="submit" class="headerButton">Send message</button>
+                  <button type="button" class="headerButton">Send message</button>
                 </div>
               </div>
             </form>      
@@ -260,13 +271,37 @@
 
             <div class="contactEmailsHeader">Caretaker</div>
             <div class="contactEmails">michael.brown@rmg.london</div>
-            <div class="contactEmails">XXX XXX XXXX</div>
+            <div class="contactEmails">01732 457 586</div>
 
             <div style="height: 15px;"></div>
 
            
           </div>
         </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="textForModel"></div>>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="closeModel()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </div>
 
@@ -281,6 +316,11 @@ Orange
 -->
 
 <style>
+
+  .mainMesageText{
+     font-family: Arial, sans-serif;
+  }
+
   .newsTable {
    margin-top: 45px;
    font-family: Roboto;
@@ -293,8 +333,8 @@ Orange
   .contactEmails {
       font-size:18px;
       color: #c9c304;
-      padding-left: 20px;
-      font-weight: 600;
+      padding-left: 0px;
+      font-weight: 400;
   }
   .contactEmailsHeader {
     font-size: 17px;
@@ -313,7 +353,7 @@ Orange
     padding-bottom: 30px;
     font-size: 34px;
     color:#617E4D;
-    font-family: Lato Black;
+    font-family: 'Times New Roman', serif;
     font-style: italic;
   }
 
@@ -328,7 +368,7 @@ Orange
     border-bottom-width: 1px;
     border-top-style: dashed;
     border-top-width: 1px;
-    font-family: Lato Black;
+    font-family:  'Times New Roman', serif;
   }
 
   .announcements {
